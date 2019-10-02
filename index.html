@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <template>
+            <table>
+                <tr>
+                    <td v-for="tr in trs">Hola</td>
+                </tr>
+            </table>
+            <button @click="trs++" v-if="trs<limite ">Agregar</button>
+            <button @click="trs--" v-if="trs">Eliminar</button>
+        </template>
+    </div>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/ediTable.js">
+    </script>
+</body>
+
+</html>
