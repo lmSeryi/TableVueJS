@@ -1,8 +1,13 @@
- let app = new Vue({
-     el: '#app',
-     data: {
-         limite: 5,
-         nombre: '',
-         trs: 1
-     }
- });
+let app = new Vue({
+        el: '#app',
+        data: {
+            divisiones: 1,
+        },
+        computed: {
+      total: function () {
+        var x = Number(this.divisiones)
+      return x 
+        
+    }
+  }
+    });

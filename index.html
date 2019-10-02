@@ -11,11 +11,11 @@
         <template>
             <table>
                 <tr>
-                    <td v-for="tr in trs">Hola</td>
+                    <td v-for="tr in total">-</td>
                 </tr>
             </table>
-            <button @click="trs++" v-if="trs<limite ">Agregar</button>
-            <button @click="trs--" v-if="trs">Eliminar</button>
+            <input type="range" name="" v-model="divisiones" min="1" max="32">
+            <p>Divisiones: {{divisiones}}</p>
         </template>
     </div>
     <script type="text/javascript" src="js/vue.js"></script>
