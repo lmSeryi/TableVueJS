@@ -10,21 +10,24 @@
 
 <body>
     <div id="app">
-            <template>
-                <table id="T1">
-                    <tr>
-                        <td v-for="curso in total">{{cantidad}}</td>
-                    </tr>
-                </table>
-                
-                <input type="range" name="" v-model="divisiones" min="1" max="32" class="range">
-                <p>Divisiones: {{divisiones}}</p>
-                <input type="text" v-model="cantidad">
-            </template>
+        <template>
+            <table id="T1" @click="tabla1">
+                <tr>
+                    <td v-for="curso in total1"><p>{{dato1}}</p></td>
+                </tr>
+            </table>
+            <table id="T2" @click="tabla2" >
+                <tr>
+                    <td v-for="curso in total2"><p>{{dato2}}<p></td>
+                </tr>
+            </table>
+            <input type="range" name="" v-model="divisiones" min="1" max="32" class="range">
+            <p>Divisiones: {{divisiones}}</p>
+            <input type="text" v-model="cantidad">
+        </template>
     </div>
     <script type="text/javascript" src="js/vue.js"></script>
-    <script type="text/javascript" src="js/ediTable.js">
-    </script>
+    <script type="text/javascript" src="js/ediTable.js"></script>
 </body>
-
+        
 </html>
