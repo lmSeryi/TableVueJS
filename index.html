@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/Interfaz.css">
+    <link rel="stylesheet" type="text/css" href="css/Slider.css">
 </head>
 
 <body>
     <div id="app">
-        <template>
-            <table>
-                <tr>
-                    <td v-for="tr in total">-</td>
-                </tr>
-            </table>
-            <input type="range" name="" v-model="divisiones" min="1" max="32">
-            <p>Divisiones: {{divisiones}}</p>
-        </template>
+            <template>
+                <table id="T1">
+                    <tr>
+                        <td v-for="curso in total">{{cantidad}}</td>
+                    </tr>
+                </table>
+                
+                <input type="range" name="" v-model="divisiones" min="1" max="32" class="range">
+                <p>Divisiones: {{divisiones}}</p>
+                <input type="text" v-model="cantidad">
+            </template>
     </div>
     <script type="text/javascript" src="js/vue.js"></script>
     <script type="text/javascript" src="js/ediTable.js">
