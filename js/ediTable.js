@@ -2,6 +2,7 @@ let app = new Vue({
         el: '#app',
         data: {
             divisiones: 1,
+            cantidad: ''
         },
         computed: {
       total: function () {
@@ -10,4 +11,4 @@ let app = new Vue({
         
     }
   }
-    });
+});
